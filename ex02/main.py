@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 
 
 def build_circuit() -> QuantumCircuit:
+    """Construit et retourne un circuit quantique préparant un état de Bell."""
     qc = QuantumCircuit(2, 2)
     qc.h(0)      # |0⟩ → 1/√2 (|0⟩ + |1⟩)
     qc.cx(0, 1)  # CNOT → état de Bell 1/√2 (|00⟩ + |11⟩)
@@ -16,11 +17,13 @@ def build_circuit() -> QuantumCircuit:
 
 
 def run_simulator(qc: QuantumCircuit, shots: int = 500) -> dict:
+    """Exécute le circuit sur un simulateur d'état quantique et retourne les counts."""
     sampler = StatevectorSampler()
     result = sampler.run([qc], shots=shots).result()
     return result[0].data.c.get_counts()
 
 def run_real_hardware(qc: QuantumCircuit, shots: int = 500) -> dict:
+    """Exécute le circuit sur un vrai ordinateur quantique et retourne les counts."""
     load_dotenv()
     token = os.environ.get("IBM_QUANTUM_TOKEN")
     if not token:
