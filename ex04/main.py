@@ -1,3 +1,6 @@
+# Copyright (c) 2026 maxg56
+# SPDX-License-Identifier: MIT — voir le fichier LICENSE à la racine du dépôt.
+
 import math
 import os
 from dotenv import load_dotenv
