@@ -161,3 +161,17 @@ uv run ex04/main.py
 | `qiskit-ibm-runtime` | Connexion et exécution sur les QPU IBM |
 | `matplotlib` | Visualisation des histogrammes |
 | `python-dotenv` | Chargement du token depuis `.env` |
+
+---
+
+## Crédits
+
+- Sujet : projet **ft_quantum** de l'école [42](https://42.fr/). Le texte du sujet et les éventuels fichiers fournis appartiennent à 42 et ne sont pas couverts par la licence de ce dépôt.
+- Documentation consultée (lecture uniquement, aucun extrait de code recopié) :
+  - [Documentation IBM Quantum / Qiskit](https://quantum.cloud.ibm.com/docs/en/guides)
+  - [Grover's algorithm](https://quantum.cloud.ibm.com/docs/en/tutorials/grovers-algorithm) — tutoriel IBM Quantum
+  - [Deutsch-Jozsa algorithm](https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-jozsa-algorithm) — cours *Fundamentals of quantum algorithms*, IBM Quantum Learning
+
+## Licence
+
+Tout le code de ce dépôt (ex00 à ex04) est distribué sous licence [MIT](LICENSE) — © 2026 maxg56.
